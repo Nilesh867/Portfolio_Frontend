@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import './Work.scss';
-import {AiFill,AiFillEye,AiFillGithub,AifillGithub} from 'react-icons/ai';
+import {AiFill,AiFillEye,AiFillGithub} from 'react-icons/ai';
 import {motion} from 'framer-motion';
 import { AppWrap } from '../../wrapper';
 import { urlFor,client } from '../../client';
@@ -72,7 +72,7 @@ const Work = () =>{
                         className = "app__work-hover app__flex"
                         >
                             
-                            <a href = {work.projectlink} target ="_blank" rel ="noreferrer">
+                            <a href = {work.projectLink} target ="_blank" rel ="noreferrer">
                             <motion.div
                             whileInView={{scale:[0,1]}}
                             whileHover ={{scale :[1, 0.9]}}
@@ -83,7 +83,7 @@ const Work = () =>{
                             </motion.div>
                             </a>
 
-                            <a href = {work.codelink} target ="_blank" rel ="noreferrer">
+                            <a href = {work.codeLink} target ="_blank" rel ="noreferrer">
                             <motion.div
                             whileInView={{scale:[0,1]}}
                             whileHover ={{scale :[1, 0.9]}}
